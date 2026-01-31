@@ -20,7 +20,7 @@ void setup()
 
 void loop() 
 {
-  for (int j = 0; j < LOOP_SECONDS;) //Fins a dos minuts
+  for (int j = 0; j < LOOP_SECONDS;) //Fins a LOOP_SECONDS segons
   {
    static uint16_t hue = 0;
 
@@ -32,10 +32,10 @@ void loop()
      delay(100);
      strip.show();
    }
-   j += 20; //2 segons
+   j += 20; //20 segons
   }
 
-  for (int i = 0; i < LOOP_SECONDS;) //Fins a dos minuts
+  for (int i = 0; i < LOOP_SECONDS;) //Fins a LOOP_SECONDS segons
   {
    strip.show();
    strip.fill(strip.Color(255, 0, 0));
@@ -49,7 +49,7 @@ void loop()
    i += 3; //3 segons
   }
 
- for (int k = 0; k < LOOP_SECONDS;) //Fins a dos minuts
+ for (int k = 0; k < LOOP_SECONDS;) //Fins a LOOP_SECONDS segons
  {
    delay(1000);
    strip.show();
